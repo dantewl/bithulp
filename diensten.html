@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diensten – BitHulp</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">🔵 BitHulp</div>
+    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="diensten.html" class="active">Diensten</a></li>
+      <li><a href="over-ons.html">Over ons</a></li>
+      <li><a href="veilig-internet.html">Veilig internet</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="page-hero">
+    <h1>Onze Diensten</h1>
+    <p>Alles wat wij voor u kunnen doen</p>
+  </section>
+  <section class="section">
+    <div class="service-list">
+      <div class="service-item"><i class="fas fa-mobile-alt"></i><div><h3>App-uitleg</h3><p>Stap-voor-stap uitleg over WhatsApp, DigiD, Facebook en meer.</p></div></div>
+      <div class="service-item"><i class="fas fa-download"></i><div><h3>Installatie hulp</h3><p>Wij helpen bij het installeren en instellen van apps op uw toestel.</p></div></div>
+      <div class="service-item"><i class="fas fa-file-pdf"></i><div><h3>PDF Handleidingen</h3><p>Duidelijke handleidingen om te downloaden en thuis te bewaren.</p><a href="#" class="btn-small">📥 Download handleiding</a></div></div>
+      <div class="service-item"><i class="fas fa-video"></i><div><h3>Uitlegvideo's</h3><p>Korte en duidelijke video's per app, rustig uitgelegd.</p><a href="#" class="btn-small">▶ Bekijk video's</a></div></div>
+      <div class="service-item"><i class="fas fa-robot"></i><div><h3>Chatbot hulp</h3><p>Kom er niet uit? Onze chatbot helpt u verder op elk moment van de dag.</p><a href="#" class="btn-small" onclick="openChat()">💬 Open chatbot</a></div></div>
+      <div class="service-item"><i class="fas fa-user-friends"></i><div><h3>Persoonlijke begeleiding</h3><p>Als de chatbot niet helpt, komt een medewerker van BitHulp persoonlijk in beeld.</p><a href="contact.html" class="btn-small">📞 Neem contact op</a></div></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2026 BitHulp – Digitale hulp voor ouderen</p>
+    <p>📞 06-12345678 | ✉️ info@bithulp.nl</p>
+  </footer>
+  <div class="chatbot-bubble" onclick="openChat()">💬</div>
+  <div class="chatbot-box" id="chatbotBox">
+    <div class="chatbot-header"><span>BitHulp Assistent</span><button onclick="openChat()">&#x2715;</button></div>
+    <div class="chatbot-messages" id="chatMessages"><div class="bot-msg">Hallo! Hoe kan ik u helpen vandaag?</div></div>
+    <div class="chatbot-input"><input type="text" id="chatInput" placeholder="Stel een vraag..."/><button onclick="sendChat()">➤</button></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
